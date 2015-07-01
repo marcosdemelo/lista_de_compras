@@ -53,4 +53,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  Rails.application.routes.draw do
+    namespace :api do
+      resources :products
+    end
+  end
+
 end
